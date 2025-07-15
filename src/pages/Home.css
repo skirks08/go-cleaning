@@ -1,0 +1,95 @@
+.home {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hero Section */
+
+.hero {
+    background: #e1f5f2;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 24px;
+    background: #00a78e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #008c78;
+}
+
+/* Why us Section */
+
+.why-us {
+    background: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Preview Section */
+
+.services-preview {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.service-card {
+    background: #f1fcfa;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #d8f5ee;
+}
+
+/* Final CTA Section */
+
+.final-cta {
+    background: #00a78e;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
