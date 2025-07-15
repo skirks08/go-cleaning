@@ -5,6 +5,7 @@ import Booking from './pages/Booking';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Quote from './pages/Quote';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/quote" element={<Quote />} />
       </Routes>
       <Footer />
     </Router>
