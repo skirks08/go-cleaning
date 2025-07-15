@@ -5,7 +5,7 @@ function Home() {
     return (
         <div className="home">
 
-            /* Hero Section */
+            {/* Hero Section */}
             <section className="hero">
                 <div className="hero-content">
                     <h1>Welcome to Go Cleaning</h1>
@@ -14,7 +14,7 @@ function Home() {
                 </div>
             </section>
 
-            /* Why Choose Us Section */
+            {/* Why Choose Us Section */}
             <section className="why-us">
                 <h2>Why Choose Go Cleaning?</h2>
                 <div className="features">
@@ -24,7 +24,7 @@ function Home() {
                 </div>
             </section>
 
-            /* Services Preview */
+            {/* Services Preview */}
             <section className="services-preview">
                 <h2>Our Services</h2>
                 <div className="services-grid">
@@ -35,7 +35,7 @@ function Home() {
                 <a href="/services" className="cta-button">View All Services</a>
             </section>
 
-            /* Final CTA */
+            {/* Final CTA */}
             <section className="final-cta">
                 <h2>Ready for a Spotless Home?</h2>
                 <a href="/booking" className="cta-button">Book Your Clean Today</a>
