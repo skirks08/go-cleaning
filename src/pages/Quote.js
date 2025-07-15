@@ -71,7 +71,11 @@ function Quote() {
                         ${calcPrice()}
                     </span>
                 </p>
-                <a className='cta-button' href='/booking'>Book This Clean</a>
+                <a className='cta-button' 
+                href={`/booking?sqft=${form.sqft}&hours=${form.hours}&level=${form.level}&price=${calcPrice()}`}
+                >
+                Book This Clean
+                </a>
             </div>
         </div>
     );
