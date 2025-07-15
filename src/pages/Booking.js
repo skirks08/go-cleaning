@@ -18,11 +18,29 @@ function Booking() {
     const handleChange = (e) => 
         setForm({ ...form, [e.target.name]: e.target.value });
 
-    const handleSubmit = (e) => {
+    const handleSubmit =  async (e) => {
         e.preventDefault();
-        console.log('Booking Submitted:', form);
-        alert('Thank you for booking with Go Cleaning!');
-        // Send data to google sheets or API here
+
+        try {
+            const response = await fetch('https://script.google.com/macros/s/AKfycbySjBiKy6SN0eDGL71O4LAHXhvdS8gFTjjVeqzq86QTn_39jfZ5MhTZ3p5n8_WyI2JIHQ/exec', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(form)
+            });
+
+            const result = await response.json();
+
+            if (result.status === 'success') {
+                alert('Booking Confirmed! Thank you.');
+            } else {
+                alert('Something went wrong. Please try again.');
+            }
+        } catch (error) {
+            console.error('Error submitting booking:', error);
+            alert('Error submitting booking. Please try again later.');
+        }
     };
 
     return (
