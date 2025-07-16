@@ -25,9 +25,9 @@ function Booking() {
             const response = await fetch('https://script.google.com/macros/s/AKfycbySjBiKy6SN0eDGL71O4LAHXhvdS8gFTjjVeqzq86QTn_39jfZ5MhTZ3p5n8_WyI2JIHQ/exec', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
                 },
-                body: JSON.stringify(form)
+                body: new URLSearchParams(formData).toString(),
             });
 
             const result = await response.json();
