@@ -27,7 +27,7 @@ function Booking() {
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
                 },
-                body: new URLSearchParams(formData).toString(),
+                body: new URLSearchParams(form).toString(),
             });
 
             const result = await response.json();
