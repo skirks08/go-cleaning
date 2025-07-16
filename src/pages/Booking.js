@@ -32,7 +32,7 @@ function Booking() {
 
             const result = await response.json();
 
-            if (result.status === 'success') {
+            if (result.result === 'success') {
                 alert('Booking Confirmed! Thank you.');
             } else {
                 alert('Something went wrong. Please try again.');
